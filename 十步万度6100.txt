@@ -1,0 +1,106 @@
+// ConsoleApplication1.cpp : 定义控制台应用程序的入口点。
+//
+
+#include "stdafx.h"
+#include<iostream>
+
+int a[6][5];
+int b[10]={ 1,1,2,3,9,10,10,14,14,14 };
+int c;
+int n;
+int x;
+int y;
+int w;
+
+
+int main()
+{
+	using namespace std;
+	for (b[0] = 1; b[0] < 19;b[0]++)
+	{
+		for (b[1] = b[0]; b[1] < 19;b[1]++)
+		{
+			for (b[2] = b[1]; b[2] < 19;b[2]++)
+			{
+				for (b[3] = b[2]; b[3] < 19;b[3]++)
+				{
+					for (b[4] = b[3]; b[4] < 19;b[4]++)
+					{
+						for (b[5] = b[4]; b[5] < 19;b[5]++)
+						{
+							for (b[6] = b[5]; b[6] < 19;b[6]++)
+							{
+								for (b[7] = b[6]; b[7] < 19;b[7]++)
+								{
+									for (b[8] = b[7]; b[8] < 19;b[8]++)
+									{
+										for (b[9] = b[8]; b[9] < 19;b[9]++)
+										{
+											memset(&a[0][0],0,sizeof(int)*6*5);
+											w = 0;
+											for (n = 0;n < 10;n++)//确定了此次点击的位置
+											{
+												c = b[n];
+												switch (c)
+												{
+												case 1: x = 1, y = 1;break;
+												case 2: x = 3, y = 1;break;
+												case 3: x = 4, y = 1;break;
+												case 4:x = 1, y = 2;break;
+												case 5:x = 2, y = 2;break;
+												case 6:x = 3, y = 2;break;
+												case 7:x = 4, y = 2;break;
+												case 8:x = 1, y = 3;break;
+												case 9:x = 2, y = 3;break;
+												case 10:x = 3, y = 3;break;
+												case 11:x = 4, y = 3;break;
+												case 12:x = 1, y = 4;break;
+												case 13:x = 2, y = 4;break;
+												case 14:x = 3, y = 4;break;
+												case 15:x = 4, y = 4;break;
+												case 16:x = 1, y = 5;break;
+												case 17:x = 2, y = 5;break;
+												case 18:x = 4, y = 5;break;
+													break;
+												}
+												while (y > 0 && y<6 && x<5 && x > 0 && (!((x == 2 && y == 1) || (x == 3 && y == 5))))
+												{	
+													a[y][x]++;
+													w++;
+													if (a[y][x] == 4) a[y][x] = 0;
+													switch (a[y][x])
+													{
+													case 0: y--;break;
+													case 1:x++;break;
+													case 2:y++;break;
+													case 3:x--;break;
+														break;
+													}	
+												}									
+											}
+											if (w > 68)
+											{
+												for (n = 0;n < 10;n++) 
+												{
+													printf(" %d",b[n]);
+												}
+												printf("%d", w);
+												printf("\n");
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+
+
+
+    return 0;
+}
+
