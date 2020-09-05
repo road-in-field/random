@@ -6,17 +6,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://road-in-field.github.io/random">
-  <title>how to use a hexo theme | RANDOM</title>
+  <title>wo | RANDOM</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Hexo是一个快速、简洁高效的博客框架。在提供了多种可开发的博客主题的同时，hexo使用markdown语言解析文章，渲染生成静态网页（html文件）。 使用前准备： Node.js (Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本) 建立Repository Git 安装hexo  1$ npm install -g hexo-cli   在本地新建bl">
-<meta property="og:type" content="article">
-<meta property="og:title" content="how to use a hexo theme">
-<meta property="og:url" content="https://road-in-field.github.io/random/2020/08/19/1/index.html">
+  <meta property="og:type" content="article">
+<meta property="og:title" content="wo">
+<meta property="og:url" content="https://road-in-field.github.io/random/2020/09/05/wo/index.html">
 <meta property="og:site_name" content="RANDOM">
-<meta property="og:description" content="Hexo是一个快速、简洁高效的博客框架。在提供了多种可开发的博客主题的同时，hexo使用markdown语言解析文章，渲染生成静态网页（html文件）。 使用前准备： Node.js (Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本) 建立Repository Git 安装hexo  1$ npm install -g hexo-cli   在本地新建bl">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-08-19T12:47:53.000Z">
-<meta property="article:modified_time" content="2020-08-19T14:03:45.583Z">
+<meta property="article:published_time" content="2020-09-05T02:53:47.000Z">
+<meta property="article:modified_time" content="2020-09-05T02:53:47.484Z">
 <meta property="article:author" content="Roadinfield">
 <meta name="twitter:card" content="summary">
   
@@ -154,52 +152,27 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-1" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-wo" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      how to use a hexo theme
+      wo
     </h1>
   
 
         
-        <a href="/2020/08/19/1/" class="archive-article-date">
-  	<time datetime="2020-08-19T12:47:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-19</time>
+        <a href="/2020/09/05/wo/" class="archive-article-date">
+  	<time datetime="2020-09-05T02:53:47.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-09-05</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Hexo是一个快速、简洁高效的博客框架。在提供了多种可开发的博客主题的同时，hexo使用markdown语言解析文章，渲染生成静态网页（html文件）。</p>
-<h2 id="使用前准备："><a href="#使用前准备：" class="headerlink" title="使用前准备："></a>使用前准备：</h2><ul>
-<li>Node.js (Node.js 版本需不低于 10.13，建议使用 Node.js 12.0 及以上版本)</li>
-<li>建立Repository</li>
-<li>Git</li>
-<li>安装hexo</li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>在本地新建blog文件夹</li>
-<li>初始化blog文件夹  <em>对blog文件夹右键或打开后在空白背景上右键，使用git bash here</em></li>
-</ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure>
-
-<p>参考视频：<br>[一步一步教你如何在Windows10上完成hexo博客搭建和yilia主题使用]（<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1pt411K7o9?p=2%EF%BC%89">https://www.bilibili.com/video/BV1pt411K7o9?p=2）</a></p>
-<h2 id="将hexo关联到github-page上"><a href="#将hexo关联到github-page上" class="headerlink" title="将hexo关联到github page上"></a>将hexo关联到github page上</h2><p>由于本人使用的是私有repository，并不希望公开站点文件，因此不使用Travis CI进行部署。</p>
-<ol>
-<li>下载hexo deploy插件<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></li>
-<li>在blog所在文件夹中找到_config.yml配置文件，修改deploy项<blockquote>
-<p>deploy:<br>  type:git<br>  repo:&lt;仓库url地址&gt;如：<a target="_blank" rel="noopener" href="https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io">https://bitbucket.org/JohnSmith/johnsmith.bitbucket.io</a><br>  branch：分支名称<br>  message：修改信息</p>
-</blockquote>
-</li>
-</ol>
-<h2 id="参考文章："><a href="#参考文章：" class="headerlink" title="参考文章："></a>参考文章：</h2><p>hexo中文手册：<a target="_blank" rel="noopener" href="https://hexo.io/docs">https://hexo.io/docs</a></p>
-
+        
       
 
       
@@ -278,7 +251,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://road-in-field.github.io/random/2020/08/19/1/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://road-in-field.github.io/random/2020/09/05/wo/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -292,18 +265,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/09/05/wo/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/09/05/a/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          wo
+          a
         
       </div>
     </a>
   
   
-    <a href="/2020/08/14/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Hello World</div>
+    <a href="/2020/08/19/1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">how to use a hexo theme</div>
       <i class="icon-circle-right"></i>
     </a>
   
